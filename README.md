@@ -1,10 +1,45 @@
-# Setup Environment 
+### Steps to Set Up a Python Environment
 
-1. Install python latest version 3.11.XXX
-2. Create and activate a virtual environment in Python (can be done directly command line or int he terminal in visual studio code)
-    a. Create folder where you want to implement your project, and change to that folder in the comamnd line: ```cd tutorial```
-    b. Under macOS > ```python3 -m venv virenv```
-    c. Under windows > ```python -m venv virenv```
-    d. update pip version: > ```pip install --upgrade pip```
-    e. activate
+1. **Install Python (Latest Version 3.11.XXX)**
 
+2. **Create and Activate a Virtual Environment in Python**
+
+    a. **Create a Folder for Your Project and Navigate to It:**
+    
+       ```bash
+       cd tutorial
+       ```
+
+    b. **Create a Virtual Environment:**
+    
+       - **macOS:**
+       
+         ```bash
+         python3 -m venv virenv
+         ```
+         
+       - **Windows:**
+       
+         ```bash
+         python -m venv virenv
+         ```
+
+    c. **Update pip Version:**
+    
+       ```bash
+       pip install --upgrade pip
+       ```
+
+    d. **Activate the Virtual Environment:**
+    
+       - **macOS/Linux:**
+       
+         ```bash
+         source virenv/bin/activate
+         ```
+       
+       - **Windows:**
+       
+         ```bash
+         virenv\Scripts\activate
+         ```
