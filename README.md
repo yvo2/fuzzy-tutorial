@@ -1,6 +1,6 @@
 ### Steps to Set Up a Python Environment
 
-1. **Install Python (Latest Version 3.11.XXX)**
+1. **Install Python (only Version 3.11.XXX)**
 
 2. **Create and Activate a Virtual Environment in Python**
 
