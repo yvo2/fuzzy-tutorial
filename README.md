@@ -1,4 +1,4 @@
-### Steps to Set Up a Python Environment
+## Steps to Set Up a Python Environment
 
 1. **Install Python (only Version 3.11.XXX)**
 
@@ -6,7 +6,7 @@
 
     a. **Create a Folder for Your Project and Navigate to It:**
     
-       ```bash
+       ```
        cd tutorial
        ```
 
@@ -14,19 +14,19 @@
     
        - **macOS:**
        
-         ```bash
+         ```
          python3 -m venv virenv
          ```
          
        - **Windows:**
        
-         ```bash
+         ```
          python -m venv virenv
          ```
 
     c. **Update pip Version:**
     
-       ```bash
+       ```
        pip install --upgrade pip
        ```
 
@@ -34,12 +34,12 @@
     
        - **macOS/Linux:**
        
-         ```bash
+         ```
          source virenv/bin/activate
          ```
        
        - **Windows:**
        
-         ```bash
+         ```
          virenv\Scripts\activate
          ```
