@@ -89,6 +89,6 @@ Work through these notebooks in order.
 
 After completing the tutorials, create your own Jupyter notebook applying one of the approaches to a problem.
 
-1. Select a domain: choose a domain related to your group project (if already available) or a personal interest. 
-2. Create and name your notebook: experiment with the chosen approach and save your notebook as `03_<YourProjectName>.ipynb`. 
-3. Push to your repository: upload your completed notebook to your GitHub repository.
+1. **Select a domain**: choose a domain related to your group project (if already available) or a personal interest. 
+2. **Create and name your notebook**: experiment with the chosen approach and save your notebook as `03_<YourProjectName>.ipynb`. 
+3. **Push to your repository**: upload your completed notebook to your GitHub repository
