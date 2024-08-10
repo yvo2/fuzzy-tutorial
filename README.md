@@ -5,7 +5,8 @@ This course introduces the use of fuzzy logic algorithms in Python, utilizing th
 
 ## Requirements
 
-Ensure you have at least Python 3.8 installed on your system.
+Ensure you have at least Python 3.8 installed on your system. 
+We tested it with Python 3.11 and 3.12.
 
 ## Installation
 
@@ -13,7 +14,8 @@ Ensure you have at least Python 3.8 installed on your system.
 > This guide assists in setting up JupyterLab and Python dependencies. 
 > If you're already comfortable with Python, feel free to use your preferred setup process.
 
-* Fork and clone this repository, or download it manually to your computer.
+First, fork and clone this repository, or download it manually to your computer. 
+Then open a terminal inside the repository and proceed.
 
 ### Linux / macOS setup
 
@@ -72,3 +74,21 @@ jupyter lab
 ```
 
 This command should open a local web interface for JupyterLab, where you can access the tutorial notebooks.
+
+
+## Tutorials
+
+This course includes two tutorial notebooks:
+
+* **01_FuzzyControlSystem.ipynb**: Introduction to fuzzy control systems.
+* **02_FuzzyClustering.ipynb**: Introduction to fuzzy clustering techniques.
+
+Work through these notebooks in order.
+
+## Deliverable
+
+After completing the tutorials, create your own Jupyter notebook applying one of the approaches to a problem.
+
+1. Select a domain: choose a domain related to your group project (if already available) or a personal interest. 
+2. Create and name your notebook: experiment with the chosen approach and save your notebook as `03_<YourProjectName>.ipynb`. 
+3. Push to your repository: upload your completed notebook to your GitHub repository.
