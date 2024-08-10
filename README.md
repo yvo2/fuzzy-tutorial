@@ -5,8 +5,7 @@ This course introduces the use of fuzzy logic algorithms in Python, utilizing th
 
 ## Requirements
 
-Ensure you have at least Python 3.8 installed on your system. 
-We tested it with Python 3.11 and 3.12.
+Python version 3.9, 3.10, or 3.11
 
 ## Installation
 
