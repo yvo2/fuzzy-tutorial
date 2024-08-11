@@ -1,7 +1,11 @@
 # Fuzzy logic tutorial
 
-This course introduces the use of fuzzy logic algorithms in Python, utilizing the
-[`SciKit-Fuzzy`](https://scikit-fuzzy.github.io/scikit-fuzzy/) library.
+This tutorial is part of the course Fuzzy Sets and Systems 
+for the Swiss Joint Master of Science in Computer Science. 
+It introduces the use of fuzzy logic algorithms in Python, 
+utilizing the [`SciKit-Fuzzy`](https://scikit-fuzzy.github.io/scikit-fuzzy/) library.
+
+The tutorial instructions are based on examples provided by the scikit-fuzzy library.
 
 ## Requirements
 
@@ -85,6 +89,9 @@ Replace `YOUR_TOKEN_IN_CONSOLE` with the token displayed in your terminal after 
 
 
 ## Tutorials
+
+Start with the [Introduction](./Introduction.md), which provides an overview 
+of fuzzy logic concepts and terminology. This is recommended as the first step.
 
 This course includes two tutorial notebooks:
 
