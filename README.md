@@ -5,7 +5,7 @@ This course introduces the use of fuzzy logic algorithms in Python, utilizing th
 
 ## Requirements
 
-Python version 3.9, 3.10, or 3.11
+Python version 3.9, 3.10, or 3.11 (3.12 not yet supported).
 
 ## Installation
 
@@ -27,34 +27,18 @@ python3 --version
 2. Create a virtual environment:
 
 ```bash
-python3 -m venv virenv
+python3 -m venv venv
 ```
 
 3. Activate the virtual environment:
 
 ```bash
-source virenv/bin/activate
+source venv/bin/activate
 ```
 
 ### Windows setup
 
-1. Verify your Python version:
-
-```bash
-python --version
-```
-
-2. Create a virtual environment:
-
-```shell
-python -m venv virenv
-```
-
-3. Activate the virtual environment:
-
-```bash
-virenv\Scripts\activate
-```
+For Windows, it is recommended to use Windows Subsystem for Linux (WSL) and apply the same steps from above.
 
 ### Installing libraries
 
@@ -73,6 +57,31 @@ jupyter lab
 ```
 
 This command should open a local web interface for JupyterLab, where you can access the tutorial notebooks.
+
+### Docker
+
+If you encounter issues with the setup above, you can use [Docker](https://docs.docker.com/get-docker/) to run the environment.
+
+1. Build the Docker Image
+
+This command will build a Docker image and install the necessary libraries:
+
+```bash
+docker build -t fuzzy-notebook:latest .
+```
+
+2. Run the Docker Container:
+
+Use the following command to start the JupyterLab server in a Docker container:
+
+```bash
+docker run -it --rm -p 10000:8888 -v "${PWD}":/home/jovyan/work fuzzy-notebook:latest
+```
+
+3. Access JupyterLab:
+
+Open your browser and go to http://localhost:10000/lab?token=YOUR_TOKEN_IN_CONSOLE. 
+Replace `YOUR_TOKEN_IN_CONSOLE` with the token displayed in your terminal after running the container. 
 
 
 ## Tutorials
