@@ -3,7 +3,7 @@
 This tutorial is part of the course _Fuzzy Sets and Systems_
 for the [Swiss Joint Master of Science in Computer Science](https://mcs.unibnf.ch/). 
 It introduces the use of fuzzy logic algorithms in Python, 
-utilizing the [`SciKit-Fuzzy`](https://scikit-fuzzy.github.io/scikit-fuzzy/) library.
+utilizing the [`scikit-fuzzy`](https://scikit-fuzzy.github.io/scikit-fuzzy/) library.
 
 The tutorial instructions are based on examples provided by the `scikit-fuzzy` library.
 
