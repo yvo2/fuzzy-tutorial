@@ -1,11 +1,11 @@
 # Fuzzy logic tutorial
 
-This tutorial is part of the course Fuzzy Sets and Systems 
-for the Swiss Joint Master of Science in Computer Science. 
+This tutorial is part of the course _Fuzzy Sets and Systems_
+for the [Swiss Joint Master of Science in Computer Science](https://mcs.unibnf.ch/). 
 It introduces the use of fuzzy logic algorithms in Python, 
 utilizing the [`SciKit-Fuzzy`](https://scikit-fuzzy.github.io/scikit-fuzzy/) library.
 
-The tutorial instructions are based on examples provided by the scikit-fuzzy library.
+The tutorial instructions are based on examples provided by the `scikit-fuzzy` library.
 
 ## Requirements
 
@@ -22,19 +22,19 @@ Then open a terminal inside the repository and proceed.
 
 ### Linux / macOS setup
 
-1. Verify your Python version:
+1. Verify your **Python version**:
 
 ```bash
 python3 --version
 ```
 
-2. Create a virtual environment:
+2. Create a **virtual environment**:
 
 ```bash
 python3 -m venv venv
 ```
 
-3. Activate the virtual environment:
+3. **Activate** the virtual environment:
 
 ```bash
 source venv/bin/activate
@@ -42,11 +42,11 @@ source venv/bin/activate
 
 ### Windows setup
 
-For Windows, it is recommended to use Windows Subsystem for Linux (WSL) and apply the same steps from above.
+For Windows, it is recommended to **use WSL** (Windows Subsystem for Linux) and apply the same steps from above.
 
 ### Installing libraries
 
-With the virtual environment activated, install the required dependencies:
+With the virtual environment activated, **install the required dependencies**:
 
 ```bash
 pip install --upgrade pip
@@ -54,7 +54,7 @@ pip install -r requirements.txt
 pip install jupyterlab
 ```
 
-To start JupyterLab:
+To **start JupyterLab**:
 
 ```bash
 jupyter lab
@@ -66,7 +66,7 @@ This command should open a local web interface for JupyterLab, where you can acc
 
 If you encounter issues with the setup above, you can use [Docker](https://docs.docker.com/get-docker/) to run the environment.
 
-1. Build the Docker Image
+1. **Build** the Docker image
 
 This command will build a Docker image and install the necessary libraries:
 
@@ -74,7 +74,7 @@ This command will build a Docker image and install the necessary libraries:
 docker build -t fuzzy-notebook:latest .
 ```
 
-2. Run the Docker Container:
+2. **Run** the Docker container:
 
 Use the following command to start the JupyterLab server in a Docker container:
 
@@ -82,7 +82,7 @@ Use the following command to start the JupyterLab server in a Docker container:
 docker run -it --rm -p 10000:8888 -v "${PWD}":/home/jovyan/work fuzzy-notebook:latest
 ```
 
-3. Access JupyterLab:
+3. **Access** JupyterLab:
 
 Open your browser and go to http://localhost:10000/lab?token=YOUR_TOKEN_IN_CONSOLE. 
 Replace `YOUR_TOKEN_IN_CONSOLE` with the token displayed in your terminal after running the container. 
