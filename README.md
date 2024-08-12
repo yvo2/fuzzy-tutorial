@@ -42,7 +42,25 @@ source venv/bin/activate
 
 ### Windows setup
 
-For Windows, it is recommended to **use WSL** (Windows Subsystem for Linux) and apply the same steps from above.
+1. Verify your **Python version**:
+
+```shell
+python --version
+```
+
+2. Create a **virtual environment**:
+
+```bash
+python3 -m venv venv
+```
+
+3. **Activate** the virtual environment:
+
+```bash
+venv\Scripts\activate
+```
+
+As an alternative **use WSL2** (Windows Subsystem for Linux) and apply the steps from the Linux step.
 
 ### Installing libraries
 
