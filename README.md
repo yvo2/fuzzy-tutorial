@@ -31,7 +31,7 @@ python3 --version
 2. Create a **virtual environment**:
 
 ```bash
-python3 -m venv venv
+python3 -m virtualenv venv
 ```
 
 3. **Activate** the virtual environment:
@@ -67,7 +67,6 @@ As an alternative **use WSL2** (Windows Subsystem for Linux) and apply the steps
 With the virtual environment activated, **install the required dependencies**:
 
 ```bash
-pip install --upgrade pip
 pip install -r requirements.txt
 pip install jupyterlab
 ```
@@ -100,6 +99,8 @@ Use the following command to start the JupyterLab server in a Docker container:
 docker run -it --rm -p 10000:8888 -v "${PWD}":/home/jovyan/work fuzzy-notebook:latest
 ```
 
+If you are on Windows (without WSL), replace `"${PWD}"` with `%cd%`.
+
 3. **Access** JupyterLab:
 
 Open your browser and go to http://localhost:10000/lab?token=YOUR_TOKEN_IN_CONSOLE. 
@@ -124,4 +125,4 @@ After completing the tutorials, create your own Jupyter notebook applying one of
 
 1. **Select a domain**: choose a domain related to your group project (if already available) or a personal interest. 
 2. **Create and name your notebook**: experiment with the chosen approach and save your notebook as `03_<YourProjectName>.ipynb`. 
-3. **Push to your repository**: upload your completed notebook to your GitHub repository
+3. **Push to your repository**: upload your completed notebook to your GitHub repository (including the output).
