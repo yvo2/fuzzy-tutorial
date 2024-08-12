@@ -17,7 +17,7 @@ Python version 3.9, 3.10, or 3.11 (3.12 not yet supported).
 > This guide assists in setting up JupyterLab and Python dependencies. 
 > If you're already comfortable with Python, feel free to use your preferred setup process.
 
-First, fork and clone this repository, or download it manually to your computer. 
+First, **fork and clone this repository**, or download it manually to your computer. 
 Then open a terminal inside the repository and proceed.
 
 ### Linux / macOS setup
@@ -31,7 +31,7 @@ python3 --version
 2. Create a **virtual environment**:
 
 ```bash
-python3 -m virtualenv venv
+python3 -m venv venv
 ```
 
 3. **Activate** the virtual environment:
@@ -40,7 +40,29 @@ python3 -m virtualenv venv
 source venv/bin/activate
 ```
 
+4. **Install libraries**
+
+With the virtual environment activated, **install the required dependencies**:
+
+```
+pip install --upgrade pip
+pip install -r requirements.txt
+pip install jupyterlab
+```
+
+5. **Start JupyterLab**:
+
+```bash
+jupyter lab
+```
+
+This should open a local web interface (or display a URL) for JupyterLab, where you can access the tutorial notebooks.
+
+
 ### Windows setup
+
+As an alternative **use WSL2** (Windows Subsystem for Linux) and apply the steps from the Linux step.
+Otherwise, continue:
 
 1. Verify your **Python version**:
 
@@ -60,24 +82,23 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
-As an alternative **use WSL2** (Windows Subsystem for Linux) and apply the steps from the Linux step.
-
-### Installing libraries
+4. **Install libraries**
 
 With the virtual environment activated, **install the required dependencies**:
 
-```bash
+```
+pip install --upgrade pip
 pip install -r requirements.txt
 pip install jupyterlab
 ```
 
-To **start JupyterLab**:
+5. **Start JupyterLab**:
 
 ```bash
 jupyter lab
 ```
 
-This command should open a local web interface for JupyterLab, where you can access the tutorial notebooks.
+This command should open a local web interface (or display a URL) for JupyterLab, where you can access the tutorial notebooks.
 
 ### Docker
 
@@ -103,7 +124,7 @@ If you are on Windows (without WSL), replace `"${PWD}"` with `%cd%`.
 
 3. **Access** JupyterLab:
 
-Open your browser and go to http://localhost:10000/lab?token=YOUR_TOKEN_IN_CONSOLE. 
+Open your browser and go to http://localhost:10000/lab?token=YOUR_TOKEN_IN_CONSOLE (note the port `10000`).
 Replace `YOUR_TOKEN_IN_CONSOLE` with the token displayed in your terminal after running the container. 
 
 
@@ -125,4 +146,4 @@ After completing the tutorials, create your own Jupyter notebook applying one of
 
 1. **Select a domain**: choose a domain related to your group project (if already available) or a personal interest. 
 2. **Create and name your notebook**: experiment with the chosen approach and save your notebook as `03_<YourProjectName>.ipynb`. 
-3. **Push to your repository**: upload your completed notebook to your GitHub repository (including the output).
+3. **Push to your repository**: upload your completed notebook to your GitHub repository (_including_ the output).
